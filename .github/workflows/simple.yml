@@ -16,6 +16,7 @@ jobs: # jobs ran by the workflow
           print(platform.processor())
         shell: python
   runs-on-windows-command:
+    needs: run-shell-commands
     runs-on: windows-latest
     steps:
       - name: Directory PowerShell
