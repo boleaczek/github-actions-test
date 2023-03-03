@@ -15,3 +15,8 @@ jobs: # jobs ran by the workflow
           import platform
           print(platform.processor())
         shell: python
+  runs-on-windows-command:
+    runs-on: windows-latest
+    steps:
+      - name: Directory PowerShell
+        run: Get-Location
